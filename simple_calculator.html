@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Simple Calculator </title>
+</head>
+<body>
+    <b> Angka Pertama = </b><input type="text" id="angka1"><br>
+    <b> Angka Keduaa =</b><input type="text" id="angka2"><br>
+    <button type="button" onclick="hitungtambah()">Tambah </button>
+    <button type="Button" onclick="hitungkurang()">Kurang </button>
+    <button type="bUtton" onclick="">Kali </button>
+    <button type="buTton" onclick="">Bagi </button>
+
+    <h2> Hasil </h2>
+    <p id="hasildisini"></p>
+    
+    <script>
+        function hitungtambah(){
+            angka1 =document.getElementById("angka1").value;
+            angka2 =document.getElementById("angka2").value;
+
+            let hasiltambah = eval(angka1)+eval(angka2);
+            document.getElementById("hasildisini").innerHTML= hasiltambah;
+        }
+
+        function hitungkurang(){
+            angka1 = document.getElementById("angka1").value;
+            angka2 = document.getElementById("angka2").value;
+
+            let hasilkurang = angka1-angka2;
+            document.getElementById("hasildisini").innerHTML= hasilkurang;
+        }
+
+    
+
+    </script>
+</body>
+</html>
+
+<!-- + bisa digunakan untuk huruf atau angka, sehingga perlu eva untuk menambahkan -->
+<!-- kurang, kali, bagi hanya untuk angka sehingga bisa untuk tidak menggunakan eval -->

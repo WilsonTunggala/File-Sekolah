@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function changeParagraph(){
+            document.getElementById("demo").innerHTML = "PARAGRAPH CHANGED!!"
+        }
+        function exit(){
+            window.close()
+        }
+        function hideParagraph(){
+            document.getElementById("demo").style.display="none";
+        }
+        function munculkanparagraph(){
+            document.getElementById("demo").style.display="block";
+        }
+    </script>
+
+</head>
+
+<body>
+    <p id="demo"> Ini Paragraph </p>
+    <button onclick="changeParagraph()"> Ubah Paragraph</button>
+    <button onclick="hideParagraph()">Sembunyikan Paragraph</button>
+    <button onclick="munculkanparagraph()"> Munculkan Paragraph</button>
+    <br>
+    <button onclick="exit()">Exit</button>
+</body>
+</html>
